@@ -9,7 +9,7 @@
 5. [Adding zero](Tutorial/Level5.lean)
 6. [Precision rewriting](Tutorial/Level6.lean)
 7. [add_succ](Tutorial/Level7.lean)
-8. 2+2=4
+8. [2+2=4](Tutorial/Level8.lean)
 
 ## Addition
 
