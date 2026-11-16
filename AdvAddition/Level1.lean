@@ -1,17 +1,13 @@
 induction n with h hd
-rw [add_zero]
-rw [add_zero]
-intro h
-exact h
+repeat rw [add_zero]
 intro
-rw [add_comm] at a_1
-rw [succ_add] at a_1
-nth_rewrite 2 [add_comm] at a_1
-rw [succ_add] at a_1
+rw [a_1]
+rfl
+repeat rw [succ_eq_add_one]
+rw [← add_assoc]
+rw [← add_assoc]
+repeat rw [← succ_eq_add_one]
+intro
 apply succ_inj at a_1
-rw [add_comm] at a_1
-nth_rewrite 2 [add_comm] at a_1
-rw [a_1] at hd
-rw [hd]
-rfl
-rfl
+apply hd at a_1
+exact a_1
